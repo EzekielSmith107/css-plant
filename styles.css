@@ -90,3 +90,85 @@
     background: transparent;
     border-top: 1vmin solid #000;
 }
+
+.stem {
+    position: absolute;
+    width: 8vmin;
+    height: 30vmin;
+    top: 20vmin;
+    left: 35vmin;
+    border-radius: 50%;
+    background: transparent;
+    border-right: 2.5vmin solid var(--light-green);
+}
+
+.leaf {
+    position: relative;
+    width: 0;
+    height: 0;
+    border: 3.75vmin solid transparent;
+    border-bottom-color: var(--light-green);
+    top: 13vmin;
+    left: 3.5vmin;
+    transform: rotate(245deg);
+}
+
+.leaf::after {
+    content: '';
+    position: absolute;
+    left: -3.75vmin;
+    top: 3.75vmin;
+    width: 0;
+    height: 0;
+    border: 3.75vmin solid transparent;
+    border-top-color: var(--light-green);
+}
+
+.head {
+    position: absolute;
+    width: 13vmin;
+    height: 13vmin;
+    top: 12vmin;
+    left: 30vmin;
+    border-radius: 50%;
+    background: var(--head);
+    z-index: 3;
+}
+
+.innerHead {
+    position: relative;
+    width: 10vmin;
+    height: 10vmin;
+    top: 1.5vmin;
+    left: 1.5vmin;
+    border-radius: 50%;
+    background: var(--pot);
+    opacity: 50%;
+    z-index: 4;
+}
+
+.petalOne {
+    position: absolute;
+    width: 11vmin;
+    height: 20vmin;
+    top: 9vmin;
+    left: 31vmin;
+    border-radius: 50%;
+    background: var(--petals);
+    z-index: 2;
+    border: .3vmin solid #000;
+    transform: rotate(15deg);
+}
+
+.petalTwo {
+    position: absolute;
+    width: 11vmin;
+    height: 20vmin;
+    top: 9vmin;
+    left: 31vmin;
+    border-radius: 50%;
+    background: var(--petals);
+    z-index: 2;
+    border: .3vmin solid #000;
+    transform: rotate(110deg);
+}
