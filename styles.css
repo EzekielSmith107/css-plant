@@ -2,6 +2,7 @@
     --pot: #372118;
     --head: #885017;
     --petals: #f9e936;
+    --cheeks: #fe7d00;
     --light-green: #bccd9c;
     --dark-green: #678f57;
     --background: #486f65;
@@ -52,4 +53,40 @@
     width: 26vmin;
     height: 1vmin;
     background: #000;
+}
+
+.eyes {
+    position: absolute;
+    height: 5vmin;
+    width: 5vmin;
+    background: #000;
+    border-radius: 50%;
+    bottom: -15vmin;
+    right: 18vmin;
+    box-shadow: 13vmin 0 #000;
+    z-index: 20;
+}
+
+.cheeks {
+    position: absolute;
+    width: 5vmin;
+    height: 2.5vmin;
+    top: 9vmin;
+    left: 2vmin;
+    background: var(--cheeks);
+    border-radius: 50%;
+    opacity: 20%;
+    box-shadow: 16vmin 0 var(--cheeks);
+    z-index: 10;
+}
+
+.mouth {
+    position: absolute;
+    width: 4vmin;
+    height: 4vmin;
+    top: 8vmin;
+    left: 10vmin;
+    border-radius: 50%;
+    background: transparent;
+    border-top: 1vmin solid #000;
 }
