@@ -1,6 +1,6 @@
 :root {
-    --head: #372118;
-    --pot: #885017;
+    --pot: #372118;
+    --head: #885017;
     --petals: #f9e936;
     --light-green: #bccd9c;
     --dark-green: #678f57;
@@ -32,4 +32,24 @@
     height: 80vmin;
     border-radius: 50%;
     background: var(--background);
+}
+
+.pot {
+    position: absolute;
+    border-bottom: 25vmin solid var(--pot);
+    border-left: 7vmin solid transparent;
+    border-right: 7vmin solid transparent;
+    height: 0;
+    width: 40vmin;
+    transform: rotate(180deg);
+    bottom: 10vmin;
+    border-radius: 3vmin;
+}
+
+.pot::after {
+    content: "";
+    position: absolute;
+    width: 26vmin;
+    height: 1vmin;
+    background: #000;
 }
